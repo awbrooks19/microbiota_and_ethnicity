@@ -1,0 +1,63 @@
+ - ALL INTRA-GROUP -
+   Mean Diversity    :0.655901458854
+   Standard Deviation:0.0521715076463
+
+ - ALL INTER-GROUP -
+   Mean Diversity    :0.658804067353
+   Standard Deviation:0.0518465063704
+
+ ----- INTRA-GROUP COMPARISONS ----- 
+ - Intra: female - 
+   Mean Diversity    : 0.653692479857
+   Standard Deviation: 0.0503251510032
+
+ - Intra: male - 
+   Mean Diversity    : 0.657750800696
+   Standard Deviation: 0.0535984692692
+
+ ----- INTER-GROUP COMPARISONS ----- 
+ - Inter: male - female - 
+   Mean Diversity    : 0.658804067353
+   Standard Deviation: 0.0518465063704
+
+ ----- STATISTICAL COMPARISONS -----
+
+ --- ALL GROUPS INTRA VS INTER --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: All Intra-Group with All Inter-Group
+    List #1 Length: 472899 | List #2 Length: 471726
+    Test Statistic: 107838776779.0
+    P-Value (onetailed): 6.50866199975e-172
+    P-Value (twotailed): 1.30173239995e-171
+
+ --- COMPARISON OF INTRA-GROUP DISTANCES BETWEEN GROUPS --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-male with Intra-female
+    List #1 Length: 257403 | List #2 Length: 215496
+    Test Statistic: 28693260422.0
+    P-Value (onetailed): 1.01164962586e-93
+    P-Value (twotailed): 2.02329925173e-93
+
+
+ --- COMPARISON OF INTRA-GROUP DISTANCE WITH INTER- TO EACH OTHER GROUP --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-female with Inter-male-female
+    List #1 Length: 215496 | List #2 Length: 471726
+    Test Statistic: 48158782248.0
+    P-Value (onetailed): 2.49775771834e-268
+    P-Value (twotailed): 4.99551543668e-268
+    P-Value Bonferroni Corrected for 2 tests: 4.99551543668e-268
+    P-Value Bonferroni Corrected for 2 tests (twotailed): 9.99103087336e-268
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-male with Inter-male-female
+    List #1 Length: 257403 | List #2 Length: 471726
+    Test Statistic: 59679994531.0
+    P-Value (onetailed): 1.51752060362e-33
+    P-Value (twotailed): 3.03504120724e-33
+    P-Value Bonferroni Corrected for 2 tests: 3.03504120724e-33
+    P-Value Bonferroni Corrected for 2 tests (twotailed): 6.07008241447e-33
+

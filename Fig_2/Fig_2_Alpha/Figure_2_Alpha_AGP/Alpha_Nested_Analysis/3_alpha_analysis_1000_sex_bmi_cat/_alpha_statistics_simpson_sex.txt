@@ -1,0 +1,1 @@
+ALPHA STATISTIC COMPARISON FOR METRIC simpson by sexMann Whitney U - Nonparametric Rank Test    Comparing: male with female    List #1 Length: 718 | List #2 Length: 657    Test Statistic: 226245.0    P-Value (onetailed): 0.095492358833    P-Value (twotailed): 0.190984717666

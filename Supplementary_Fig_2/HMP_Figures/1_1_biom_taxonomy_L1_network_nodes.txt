@@ -1,0 +1,11 @@
+p__Lentisphaerae	k__	0.000113020684526
+p__Fusobacteria	k__	0.000378671027591
+p__Actinobacteria	k__	0.00194076675978
+p__Tenericutes	k__	0.0124874954711
+p__	k__	0.000245897002129
+p__Synergistetes	k__	1.0474129016e-05
+p__Cyanobacteria	k__	0.000712649480383
+p__Bacteroidetes	k__	0.671518795923
+p__Firmicutes	k__	0.28129547113
+p__Verrucomicrobia	k__	0.00275459496803
+p__Proteobacteria	k__	0.0285421634242

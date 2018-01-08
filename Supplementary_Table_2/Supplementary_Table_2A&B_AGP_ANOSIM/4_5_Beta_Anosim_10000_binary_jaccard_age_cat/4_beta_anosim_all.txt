@@ -1,0 +1,800 @@
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0137837579109
+p-value	0.0603
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0160066179273
+p-value	0.0341
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0133297572381
+p-value	0.0665
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0150057752958
+p-value	0.0449
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0150408007841
+p-value	0.046
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0158022250123
+p-value	0.0372
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.014223454237
+p-value	0.0491
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.015004676588
+p-value	0.0406
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0142444858897
+p-value	0.0527
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0150484783322
+p-value	0.0445
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0133770831285
+p-value	0.0617
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0142792843252
+p-value	0.053
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0135441363369
+p-value	0.0632
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0146349662092
+p-value	0.0514
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0138353303391
+p-value	0.0605
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0147911513404
+p-value	0.0456
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0153591605713
+p-value	0.0432
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0143991295451
+p-value	0.0532
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0151854922253
+p-value	0.0475
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0134381217867
+p-value	0.0635
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0140960637908
+p-value	0.0498
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0117320740916
+p-value	0.0887
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0156421541402
+p-value	0.0388
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0139248702424
+p-value	0.0583
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0144724713428
+p-value	0.0512
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0146203279653
+p-value	0.0505
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0139536465847
+p-value	0.0569
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0152418258861
+p-value	0.0431
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0131589651813
+p-value	0.0656
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0142419633493
+p-value	0.0511
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0148833107999
+p-value	0.0446
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0147753239038
+p-value	0.0453
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0146791917751
+p-value	0.0453
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.013508216928
+p-value	0.061
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0156802543464
+p-value	0.0353
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0138001348092
+p-value	0.0585
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0137202096879
+p-value	0.0596
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0151944230038
+p-value	0.0447
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0145818610776
+p-value	0.0456
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0131535048358
+p-value	0.0677
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0146360821389
+p-value	0.0497
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0147968482011
+p-value	0.0464
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0143754575364
+p-value	0.045
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0162527201617
+p-value	0.0329
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0130419685965
+p-value	0.0674
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0134992243318
+p-value	0.0635
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0141693465944
+p-value	0.0565
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0145155258217
+p-value	0.0499
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0138605029353
+p-value	0.0529
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0158168572425
+p-value	0.0367
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0151285026678
+p-value	0.042
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0136575571962
+p-value	0.0634
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0142543510462
+p-value	0.0517
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0160200482694
+p-value	0.0381
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0149119316281
+p-value	0.0451
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0139821454157
+p-value	0.0521
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0134675089773
+p-value	0.0644
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0133711910723
+p-value	0.0663
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0163443968484
+p-value	0.0328
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0135128520896
+p-value	0.0636
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0141769859914
+p-value	0.0525
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0143862496347
+p-value	0.0533
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0144857131496
+p-value	0.0511
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0147428565636
+p-value	0.0479
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0140670000652
+p-value	0.0513
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0140370251757
+p-value	0.0534
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0151036707586
+p-value	0.0427
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0140611448022
+p-value	0.0551
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.014233666439
+p-value	0.0537
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0156059626085
+p-value	0.0367
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0144269851748
+p-value	0.0501
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0142515634097
+p-value	0.0524
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0148235490172
+p-value	0.0476
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0145209246083
+p-value	0.0496
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0143206350461
+p-value	0.0504
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0167972084793
+p-value	0.0288
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0141950188403
+p-value	0.0519
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0145185970263
+p-value	0.0488
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0131235072927
+p-value	0.0646
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.013557636946
+p-value	0.0646
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0157657858866
+p-value	0.0348
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0151429161221
+p-value	0.0451
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0128518891887
+p-value	0.0702
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0145578100584
+p-value	0.0476
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.013285196848
+p-value	0.068
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0147855469692
+p-value	0.0447
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0155113793488
+p-value	0.0387
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0149284385633
+p-value	0.0455
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0150592943126
+p-value	0.0441
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.012462129321
+p-value	0.0766
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.015228838894
+p-value	0.0408
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0138560791566
+p-value	0.0574
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0146154169305
+p-value	0.0468
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.015212411106
+p-value	0.0447
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0142346144178
+p-value	0.0518
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0128861104868
+p-value	0.071
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0144203464784
+p-value	0.0488
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0127874469589
+p-value	0.0699
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.01378586676
+p-value	0.0629
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	5
+test statistic	0.0159410999019
+p-value	0.0317
+number of permutations	9999

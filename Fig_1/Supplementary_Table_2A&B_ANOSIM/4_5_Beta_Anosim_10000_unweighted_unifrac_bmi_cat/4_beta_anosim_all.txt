@@ -1,0 +1,800 @@
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0886214280043
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0941334598951
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0883894451502
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.090915622667
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0946407238415
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0922753334163
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0903189497595
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0941325100398
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0956818444467
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0924110318638
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.091512779981
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0934743193542
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0912356991066
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0859777433604
+p-value	0.0002
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0884754148532
+p-value	0.0002
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0938973300391
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0913781260606
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0935710944254
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0949650120498
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0899316456123
+p-value	0.0002
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0903248765512
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0887798265897
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0921487318389
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0919334270083
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0921695732187
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0926401970263
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0910658588178
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0891315866415
+p-value	0.0002
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0932018319895
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.092074521231
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0958310314143
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.092204934312
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0931841865881
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0909690676592
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0906752750513
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0889259053252
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0903743908531
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0894948183853
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0939991707274
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0922812723904
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0897950329219
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0881726558097
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.095675884212
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0900438749994
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.091699658924
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0949598132947
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0887073741104
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0916170610256
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0930349151117
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0929572761264
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0926332639399
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0889815308227
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0839589617598
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0902209806187
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0904352644024
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0892706077637
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.091737234216
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0900515911932
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.08966855477
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0939773466833
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0902296768401
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0890375441859
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0925610230995
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0887959116838
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0871705900499
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0909393164999
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0938702630498
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.091643764347
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0852126673464
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0916057888569
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0914134912592
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0876875966305
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0890144467035
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0959109530697
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0867558367885
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0925548756239
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0902580452871
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0891727312087
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.091484700439
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0936734031492
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0882874861763
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0934975864214
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0908709597065
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0907875289365
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0926533194754
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0911087136187
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0974014168041
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0907812602383
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0936991583508
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0949185140618
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0904019879911
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0923004974574
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.091283559998
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0919013776089
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0905920636635
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0904718487027
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0889363612438
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0903015671962
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.0925942509483
+p-value	0.0001
+number of permutations	9999
+	ANOSIM results
+method name	ANOSIM
+test statistic name	R
+sample size	991
+number of groups	4
+test statistic	0.090305545431
+p-value	0.0001
+number of permutations	9999

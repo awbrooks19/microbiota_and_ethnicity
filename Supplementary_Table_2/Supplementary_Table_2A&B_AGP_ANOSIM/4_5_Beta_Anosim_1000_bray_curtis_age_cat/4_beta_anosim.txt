@@ -1,0 +1,7 @@
+ - Calculating ANOSIM for Rarefied DMs Distinguishability by: age_cat - 
+   - Average ANOSIM R-stat : 0.0104672420835
+   - Average ANOSIM P-val  : 0.072186
+   - Sample Size           : 1375
+   - Number of Groups      : 5
+   - Number of Permutations: 9999
+

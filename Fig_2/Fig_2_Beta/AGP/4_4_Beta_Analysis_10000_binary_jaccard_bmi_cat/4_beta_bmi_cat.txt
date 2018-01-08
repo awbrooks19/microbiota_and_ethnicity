@@ -1,0 +1,228 @@
+ - ALL INTRA-GROUP -
+   Mean Diversity    :0.783950822354
+   Standard Deviation:0.0531874799715
+
+ - ALL INTER-GROUP -
+   Mean Diversity    :0.792320943156
+   Standard Deviation:0.0544445636333
+
+ ----- INTRA-GROUP COMPARISONS ----- 
+ - Intra: Obese - 
+   Mean Diversity    : 0.813032363119
+   Standard Deviation: 0.0583469885011
+
+ - Intra: Normal - 
+   Mean Diversity    : 0.783133368888
+   Standard Deviation: 0.0528209377874
+
+ - Intra: Underweight - 
+   Mean Diversity    : 0.807708650592
+   Standard Deviation: 0.0523737795808
+
+ - Intra: Overweight - 
+   Mean Diversity    : 0.785492544589
+   Standard Deviation: 0.0539923990105
+
+ ----- INTER-GROUP COMPARISONS ----- 
+ - Inter: Obese - Underweight - 
+   Mean Diversity    : 0.813817092954
+   Standard Deviation: 0.0543394043209
+
+ - Inter: Normal - Underweight - 
+   Mean Diversity    : 0.797568935186
+   Standard Deviation: 0.0507099977589
+
+ - Inter: Normal - Obese - 
+   Mean Diversity    : 0.803061870076
+   Standard Deviation: 0.0578995120814
+
+ - Inter: Overweight - Obese - 
+   Mean Diversity    : 0.80282883836
+   Standard Deviation: 0.0582835107442
+
+ - Inter: Overweight - Normal - 
+   Mean Diversity    : 0.785057160644
+   Standard Deviation: 0.0524269520818
+
+ - Inter: Overweight - Underweight - 
+   Mean Diversity    : 0.799282029794
+   Standard Deviation: 0.0507368922122
+
+ ----- STATISTICAL COMPARISONS -----
+
+ --- ALL GROUPS INTRA VS INTER --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: All Intra-Group with All Inter-Group
+    List #1 Length: 229917 | List #2 Length: 260628
+    Test Statistic: 27294953326.0
+    P-Value (onetailed): 0.0
+    P-Value (twotailed): 0.0
+
+ --- COMPARISON OF INTRA-GROUP DISTANCES BETWEEN GROUPS --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Obese with Intra-Underweight
+    List #1 Length: 3321 | List #2 Length: 1035
+    Test Statistic: 1827216.0
+    P-Value (onetailed): 0.001055791765
+    P-Value (twotailed): 0.00211158353001
+    P-Value Bonferroni Corrected for 6.0 tests: 0.00633475059003
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 0.0126695011801
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Normal with Intra-Underweight
+    List #1 Length: 198765 | List #2 Length: 1035
+    Test Statistic: 73877841.0
+    P-Value (onetailed): 1.41632581183e-55
+    P-Value (twotailed): 2.83265162366e-55
+    P-Value Bonferroni Corrected for 6.0 tests: 8.49795487098e-55
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 1.6995909742e-54
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Normal with Intra-Obese
+    List #1 Length: 198765 | List #2 Length: 3321
+    Test Statistic: 229659633.0
+    P-Value (onetailed): 1.81026966577e-199
+    P-Value (twotailed): 3.62053933153e-199
+    P-Value Bonferroni Corrected for 6.0 tests: 1.08616179946e-198
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 2.17232359892e-198
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Overweight with Intra-Obese
+    List #1 Length: 26796 | List #2 Length: 3321
+    Test Statistic: 32334125.0
+    P-Value (onetailed): 2.59982794182e-146
+    P-Value (twotailed): 5.19965588364e-146
+    P-Value Bonferroni Corrected for 6.0 tests: 1.55989676509e-145
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 3.11979353018e-145
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Overweight with Intra-Normal
+    List #1 Length: 26796 | List #2 Length: 198765
+    Test Statistic: 2760342499.0
+    P-Value (onetailed): 1.19862992031e-22
+    P-Value (twotailed): 2.39725984062e-22
+    P-Value Bonferroni Corrected for 6.0 tests: 7.19177952187e-22
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 1.43835590437e-21
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Overweight with Intra-Underweight
+    List #1 Length: 26796 | List #2 Length: 1035
+    Test Statistic: 10492233.0
+    P-Value (onetailed): 1.06787851974e-40
+    P-Value (twotailed): 2.13575703948e-40
+    P-Value Bonferroni Corrected for 6.0 tests: 6.40727111843e-40
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 1.28145422369e-39
+
+
+ --- COMPARISON OF INTRA-GROUP DISTANCE WITH INTER- TO EACH OTHER GROUP --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Obese with Inter-Normal-Obese
+    List #1 Length: 3321 | List #2 Length: 51742
+    Test Statistic: 94750016.0
+    P-Value (onetailed): 1.30293800715e-23
+    P-Value (twotailed): 2.60587601431e-23
+    P-Value Bonferroni Corrected for 12 tests: 1.56352560858e-22
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 3.12705121717e-22
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Obese with Inter-Obese-Underweight
+    List #1 Length: 3321 | List #2 Length: 3772
+    Test Statistic: 6254686.0
+    P-Value (onetailed): 0.459646261456
+    P-Value (twotailed): 0.919292522912
+    P-Value Bonferroni Corrected for 12 tests: 1.0
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Obese with Inter-Overweight-Obese
+    List #1 Length: 3321 | List #2 Length: 19024
+    Test Statistic: 34869167.0
+    P-Value (onetailed): 5.76787456923e-22
+    P-Value (twotailed): 1.15357491385e-21
+    P-Value Bonferroni Corrected for 12 tests: 6.92144948308e-21
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.38428989662e-20
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Normal with Inter-Normal-Obese
+    List #1 Length: 198765 | List #2 Length: 51742
+    Test Statistic: 4101121427.0
+    P-Value (onetailed): 0.0
+    P-Value (twotailed): 0.0
+    P-Value Bonferroni Corrected for 12 tests: 0.0
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 0.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Normal with Inter-Normal-Underweight
+    List #1 Length: 198765 | List #2 Length: 29026
+    Test Statistic: 2401772114.0
+    P-Value (onetailed): 0.0
+    P-Value (twotailed): 0.0
+    P-Value Bonferroni Corrected for 12 tests: 0.0
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 0.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Normal with Inter-Overweight-Normal
+    List #1 Length: 198765 | List #2 Length: 146392
+    Test Statistic: 14211914457.0
+    P-Value (onetailed): 1.21672565101e-31
+    P-Value (twotailed): 2.43345130201e-31
+    P-Value Bonferroni Corrected for 12 tests: 1.46007078121e-30
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 2.92014156241e-30
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Underweight with Inter-Obese-Underweight
+    List #1 Length: 1035 | List #2 Length: 3772
+    Test Statistic: 1817936.0
+    P-Value (onetailed): 0.000349506652199
+    P-Value (twotailed): 0.000699013304397
+    P-Value Bonferroni Corrected for 12 tests: 0.00419407982638
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 0.00838815965277
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Underweight with Inter-Normal-Underweight
+    List #1 Length: 1035 | List #2 Length: 29026
+    Test Statistic: 16859393.0
+    P-Value (onetailed): 1.0320246801e-11
+    P-Value (twotailed): 2.06404936019e-11
+    P-Value Bonferroni Corrected for 12 tests: 1.23842961612e-10
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 2.47685923223e-10
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Underweight with Inter-Overweight-Underweight
+    List #1 Length: 1035 | List #2 Length: 10672
+    Test Statistic: 6060572.0
+    P-Value (onetailed): 1.10542773422e-07
+    P-Value (twotailed): 2.21085546843e-07
+    P-Value Bonferroni Corrected for 12 tests: 1.32651328106e-06
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 2.65302656212e-06
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Overweight with Inter-Overweight-Obese
+    List #1 Length: 26796 | List #2 Length: 19024
+    Test Statistic: 212100945.0
+    P-Value (onetailed): 8.39816293347e-207
+    P-Value (twotailed): 1.67963258669e-206
+    P-Value Bonferroni Corrected for 12 tests: 1.00777955202e-205
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 2.01555910403e-205
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Overweight with Inter-Overweight-Normal
+    List #1 Length: 26796 | List #2 Length: 146392
+    Test Statistic: 1987612455.0
+    P-Value (onetailed): 0.000242375547053
+    P-Value (twotailed): 0.000484751094106
+    P-Value Bonferroni Corrected for 12 tests: 0.00290850656463
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 0.00581701312927
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Overweight with Inter-Overweight-Underweight
+    List #1 Length: 26796 | List #2 Length: 10672
+    Test Statistic: 121487192.0
+    P-Value (onetailed): 7.36376949452e-115
+    P-Value (twotailed): 1.4727538989e-114
+    P-Value Bonferroni Corrected for 12 tests: 8.83652339343e-114
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.76730467869e-113
+

@@ -1,0 +1,7 @@
+ - Calculating ANOSIM for Rarefied DMs Distinguishability by: race - 
+   - Average ANOSIM R-stat : 0.0694319754135
+   - Average ANOSIM P-val  : 0.011131
+   - Sample Size           : 1375
+   - Number of Groups      : 4
+   - Number of Permutations: 9999
+

@@ -1,0 +1,4 @@
+for curChrom in {1..22}
+do
+   "vcftools --gzvcf ../Phase_3_VCF/Autosomes/ALL.chr"$curChrom".phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz" --out "out_"$curChrom --remove-indels --maf 0.01 --recode-bcf
+done

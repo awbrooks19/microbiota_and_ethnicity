@@ -1,0 +1,1 @@
+ALPHA STATISTIC COMPARISON FOR METRIC observed_otus by sexMann Whitney U - Nonparametric Rank Test    Comparing: male with female    List #1 Length: 718 | List #2 Length: 657    Test Statistic: 225769.0    P-Value (onetailed): 0.0849706464363    P-Value (twotailed): 0.169941292873

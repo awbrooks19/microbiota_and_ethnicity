@@ -1,0 +1,228 @@
+ - ALL INTRA-GROUP -
+   Mean Diversity    :0.490646125456
+   Standard Deviation:0.182755623297
+
+ - ALL INTER-GROUP -
+   Mean Diversity    :0.499445371
+   Standard Deviation:0.182530604822
+
+ ----- INTRA-GROUP COMPARISONS ----- 
+ - Intra: Caucasian - 
+   Mean Diversity    : 0.490537006647
+   Standard Deviation: 0.182726397073
+
+ - Intra: African American - 
+   Mean Diversity    : 0.534892005333
+   Standard Deviation: 0.162403933927
+
+ - Intra: Asian or Pacific Islander - 
+   Mean Diversity    : 0.524753472445
+   Standard Deviation: 0.188981372261
+
+ - Intra: Hispanic - 
+   Mean Diversity    : 0.41467542905
+   Standard Deviation: 0.14310857118
+
+ ----- INTER-GROUP COMPARISONS ----- 
+ - Inter: Caucasian - African American - 
+   Mean Diversity    : 0.528510472586
+   Standard Deviation: 0.18518083419
+
+ - Inter: Caucasian - Hispanic - 
+   Mean Diversity    : 0.457122501834
+   Standard Deviation: 0.165767758689
+
+ - Inter: African American - Hispanic - 
+   Mean Diversity    : 0.488182694951
+   Standard Deviation: 0.158061372651
+
+ - Inter: Asian or Pacific Islander - Caucasian - 
+   Mean Diversity    : 0.513294924695
+   Standard Deviation: 0.186336082362
+
+ - Inter: Asian or Pacific Islander - African American - 
+   Mean Diversity    : 0.529717331795
+   Standard Deviation: 0.183719808011
+
+ - Inter: Asian or Pacific Islander - Hispanic - 
+   Mean Diversity    : 0.478824580829
+   Standard Deviation: 0.167909132527
+
+ ----- STATISTICAL COMPARISONS -----
+
+ --- ALL GROUPS INTRA VS INTER --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: All Intra-Group with All Inter-Group
+    List #1 Length: 769038 | List #2 Length: 175587
+    Test Statistic: 65418439872.0
+    P-Value (onetailed): 2.3171452934e-92
+    P-Value (twotailed): 4.6342905868e-92
+
+ --- COMPARISON OF INTRA-GROUP DISTANCES BETWEEN GROUPS --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Caucasian with Intra-African American
+    List #1 Length: 764466 | List #2 Length: 78
+    Test Statistic: 24872342.0
+    P-Value (onetailed): 0.00561556063071
+    P-Value (twotailed): 0.0112311212614
+    P-Value Bonferroni Corrected for 6.0 tests: 0.0336933637842
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 0.0673867275685
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Caucasian with Intra-Hispanic
+    List #1 Length: 764466 | List #2 Length: 666
+    Test Statistic: 313860970.0
+    P-Value (onetailed): 1.15484726464e-25
+    P-Value (twotailed): 2.30969452928e-25
+    P-Value Bonferroni Corrected for 6.0 tests: 6.92908358784e-25
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 1.38581671757e-24
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-African American with Intra-Hispanic
+    List #1 Length: 78 | List #2 Length: 666
+    Test Statistic: 36865.0
+    P-Value (onetailed): 6.62923545172e-10
+    P-Value (twotailed): 1.32584709034e-09
+    P-Value Bonferroni Corrected for 6.0 tests: 3.97754127103e-09
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 7.95508254207e-09
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Asian or Pacific Islander with Intra-Caucasian
+    List #1 Length: 3828 | List #2 Length: 764466
+    Test Statistic: 1626481768.0
+    P-Value (onetailed): 4.14104275236e-33
+    P-Value (twotailed): 8.28208550471e-33
+    P-Value Bonferroni Corrected for 6.0 tests: 2.48462565141e-32
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 4.96925130283e-32
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Asian or Pacific Islander with Intra-African American
+    List #1 Length: 3828 | List #2 Length: 78
+    Test Statistic: 143076.0
+    P-Value (onetailed): 0.264218583232
+    P-Value (twotailed): 0.528437166464
+    P-Value Bonferroni Corrected for 6.0 tests: 1.0
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 1.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Asian or Pacific Islander with Intra-Hispanic
+    List #1 Length: 3828 | List #2 Length: 666
+    Test Statistic: 1714234.0
+    P-Value (onetailed): 3.32957329549e-46
+    P-Value (twotailed): 6.65914659099e-46
+    P-Value Bonferroni Corrected for 6.0 tests: 1.9977439773e-45
+    P-Value Bonferroni Corrected for 6.0 tests (twotailed): 3.99548795459e-45
+
+
+ --- COMPARISON OF INTRA-GROUP DISTANCE WITH INTER- TO EACH OTHER GROUP --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Caucasian with Inter-Caucasian-African American
+    List #1 Length: 764466 | List #2 Length: 16081
+    Test Statistic: 5401933882.0
+    P-Value (onetailed): 3.60266392445e-153
+    P-Value (twotailed): 7.2053278489e-153
+    P-Value Bonferroni Corrected for 12 tests: 4.32319670934e-152
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 8.64639341868e-152
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Caucasian with Inter-Asian or Pacific Islander-Caucasian
+    List #1 Length: 764466 | List #2 Length: 108856
+    Test Statistic: 38491548657.5
+    P-Value (onetailed): 0.0
+    P-Value (twotailed): 0.0
+    P-Value Bonferroni Corrected for 12 tests: 0.0
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 0.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Caucasian with Inter-Caucasian-Hispanic
+    List #1 Length: 764466 | List #2 Length: 45769
+    Test Statistic: 19274303400.0
+    P-Value (onetailed): 7.02856100033e-294
+    P-Value (twotailed): 1.40571220007e-293
+    P-Value Bonferroni Corrected for 12 tests: 8.4342732004e-293
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.68685464008e-292
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-African American with Inter-Caucasian-African American
+    List #1 Length: 78 | List #2 Length: 16081
+    Test Statistic: 650490.0
+    P-Value (onetailed): 0.285132098233
+    P-Value (twotailed): 0.570264196467
+    P-Value Bonferroni Corrected for 12 tests: 1.0
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-African American with Inter-Asian or Pacific Islander-African American
+    List #1 Length: 78 | List #2 Length: 1144
+    Test Statistic: 45834.0
+    P-Value (onetailed): 0.343207337438
+    P-Value (twotailed): 0.686414674876
+    P-Value Bonferroni Corrected for 12 tests: 1.0
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-African American with Inter-African American-Hispanic
+    List #1 Length: 78 | List #2 Length: 481
+    Test Statistic: 21710.0
+    P-Value (onetailed): 0.0128792572403
+    P-Value (twotailed): 0.0257585144806
+    P-Value Bonferroni Corrected for 12 tests: 0.154551086884
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 0.309102173768
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Asian or Pacific Islander with Inter-Asian or Pacific Islander-Caucasian
+    List #1 Length: 3828 | List #2 Length: 108856
+    Test Statistic: 216160905.0
+    P-Value (onetailed): 3.93312841584e-05
+    P-Value (twotailed): 7.86625683168e-05
+    P-Value Bonferroni Corrected for 12 tests: 0.000471975409901
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 0.000943950819802
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Asian or Pacific Islander with Inter-Asian or Pacific Islander-African American
+    List #1 Length: 3828 | List #2 Length: 1144
+    Test Statistic: 2157446.0
+    P-Value (onetailed): 0.225082882619
+    P-Value (twotailed): 0.450165765238
+    P-Value Bonferroni Corrected for 12 tests: 1.0
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Asian or Pacific Islander with Inter-Asian or Pacific Islander-Hispanic
+    List #1 Length: 3828 | List #2 Length: 3256
+    Test Statistic: 7108396.0
+    P-Value (onetailed): 8.36670822614e-25
+    P-Value (twotailed): 1.67334164523e-24
+    P-Value Bonferroni Corrected for 12 tests: 1.00400498714e-23
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 2.00800997427e-23
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Hispanic with Inter-Caucasian-Hispanic
+    List #1 Length: 666 | List #2 Length: 45769
+    Test Statistic: 13210021.0
+    P-Value (onetailed): 1.67213380231e-09
+    P-Value (twotailed): 3.34426760463e-09
+    P-Value Bonferroni Corrected for 12 tests: 2.00656056278e-08
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 4.01312112555e-08
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Hispanic with Inter-African American-Hispanic
+    List #1 Length: 666 | List #2 Length: 481
+    Test Statistic: 117587.0
+    P-Value (onetailed): 7.21010720081e-15
+    P-Value (twotailed): 1.44202144016e-14
+    P-Value Bonferroni Corrected for 12 tests: 8.65212864097e-14
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.73042572819e-13
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-Hispanic with Inter-Asian or Pacific Islander-Hispanic
+    List #1 Length: 666 | List #2 Length: 3256
+    Test Statistic: 849627.0
+    P-Value (onetailed): 6.15373087982e-19
+    P-Value (twotailed): 1.23074617596e-18
+    P-Value Bonferroni Corrected for 12 tests: 7.38447705579e-18
+    P-Value Bonferroni Corrected for 12 tests (twotailed): 1.47689541116e-17
+

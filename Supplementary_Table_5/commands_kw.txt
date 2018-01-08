@@ -1,0 +1,62 @@
+################################
+##### AG #####
+
+### Kruskal Wallis for Ethnicity ###
+for i in 2_0_taxa_table*_relative.biom
+do
+ echo $i
+ group_significance.py -i $i -m 1_3_alpha_map_1000.txt -c race -o ${i%.*}_kw_ethnicity.txt
+done
+
+### Kruskal Wallis for Age ###
+for i in 2_0_taxa_table*_relative.biom
+do
+ echo $i
+ group_significance.py -i $i -m 1_3_alpha_map_1000.txt -c age_cat -o ${i%.*}_kw_age.txt
+done
+
+### Kruskal Wallis for BMI ###
+for i in 2_0_taxa_table*_relative.biom
+do
+ echo $i
+ group_significance.py -i $i -m 1_3_alpha_map_1000.txt -c bmi_cat -o ${i%.*}_kw_bmi.txt
+done
+
+### Kruskal Wallis for Sex ###
+for i in 2_0_taxa_table*_relative.biom
+do
+ echo $i
+ group_significance.py -i $i -m 1_3_alpha_map_1000.txt -c sex -o ${i%.*}_kw_sex.txt
+done
+
+################################
+##### HMP #####
+
+### Kruskal Wallis for Ethnicity ###
+for i in hmp_v35_table_reassign_taxonomy_relative_L*.biom
+do
+ echo $i
+ group_significance.py -i $i -m 0_2_format_map/v35_map_all.txt -c ethnicity -o ${i%.*}_kw_ethnicity.txt
+done
+
+### Kruskal Wallis for Age ###
+for i in hmp_v35_table_reassign_taxonomy_relative_L*.biom
+do
+ echo $i
+ group_significance.py -i $i -m 0_2_format_map/v35_map_all.txt -c age_cat -o ${i%.*}_kw_age_cat.txt
+done
+
+### Kruskal Wallis for BMI ###
+for i in hmp_v35_table_reassign_taxonomy_relative_L*.biom
+do
+ echo $i
+ group_significance.py -i $i -m 0_2_format_map/v35_map_all.txt -c bmi_cat -o ${i%.*}_kw_bmi_cat.txt
+done
+
+### Kruskal Wallis for Sex ###
+for i in hmp_v35_table_reassign_taxonomy_relative_L*.biom
+do
+ echo $i
+ group_significance.py -i $i -m 0_2_format_map/v35_map_all.txt -c sex -o ${i%.*}_kw_sex.txt
+done
+

@@ -1,0 +1,51 @@
+for curChrom in {1..22}
+do
+   vcftools --bcf "../1_0_MAF_Filtered/out_"$curChrom".recode.bcf" --out "out_"$curChrom --freq --counts --hap-r2 --geno-r2 --min-r2 0.5 --TsTv 1000 --hardy --SNPdensity 1000 --weir-fst-pop ../subpopulations/CEU.txt --weir-fst-pop ../subpopulations/ASW.txt --weir-fst-pop ../subpopulations/MXL.txt 
+done
+################################################################
+### CALCULATE FST FOR EACH SUPERPOPULATION ###
+for curPop in AFR AMR EAS EUR SAS
+do
+ for curPop2 in AFR AMR EAS EUR SAS
+ do
+  for curChrom in {1..22}
+  do
+   [[ $curPop == $curPop2 ]] && echo "Same" || vcftools --bcf "../1_0_MAF_Filtered/out_"$curChrom".recode.bcf" --out "out_"$curChrom"_"$curPop"_"$curPop2 --weir-fst-pop "../0_1_subpopulations/"$curPop".txt" --weir-fst-pop "../0_1_subpopulations/"$curPop2".txt"
+  done
+ done
+done
+
+################################################################
+### CALCULATE FST FOR EACH POPULATION ###
+for curPop in ACB BEB CEU CHS ESN GBR GWD ITU KHV MSL PEL PUR TSI ASW CDX CHB CLM FIN GIH IBS JPT LWK MXL PJL STU YRI
+do
+ for curPop2 in ACB BEB CEU CHS ESN GBR GWD ITU KHV MSL PEL PUR TSI ASW CDX CHB CLM FIN GIH IBS JPT LWK MXL PJL STU YRI
+ do
+  for curChrom in {1..22}
+  do
+   [[ $curPop == $curPop2 ]] && echo "Same" || vcftools --bcf "../1_0_MAF_Filtered/out_"$curChrom".recode.bcf" --out "out_"$curChrom"_"$curPop"_"$curPop2 --weir-fst-pop "../0_1_subpopulations/"$curPop".txt" --weir-fst-pop "../0_1_subpopulations/"$curPop2".txt"
+  done
+ done
+done
+
+### CALCULATE FST PAIRWISE BETWEEN TWO POPULATIONS ###
+curPop=CEU
+curPop2=ASW
+for curChrom in {1..22}
+do
+ vcftools --bcf "../1_0_MAF_Filtered/out_"$curChrom".recode.bcf" --out "out_"$curChrom"_"$curPop"_"$curPop2 --weir-fst-pop "../0_1_subpopulations/"$curPop".txt" --weir-fst-pop "../0_1_subpopulations/"$curPop2".txt"
+done
+
+curPop=CEU
+curPop2=MXL
+for curChrom in {1..22}
+do
+ vcftools --bcf "../1_0_MAF_Filtered/out_"$curChrom".recode.bcf" --out "out_"$curChrom"_"$curPop"_"$curPop2 --weir-fst-pop "../0_1_subpopulations/"$curPop".txt" --weir-fst-pop "../0_1_subpopulations/"$curPop2".txt"
+done
+
+curPop=ASW
+curPop2=MXL
+for curChrom in {1..22}
+do
+ vcftools --bcf "../1_0_MAF_Filtered/out_"$curChrom".recode.bcf" --out "out_"$curChrom"_"$curPop"_"$curPop2 --weir-fst-pop "../0_1_subpopulations/"$curPop".txt" --weir-fst-pop "../0_1_subpopulations/"$curPop2".txt"
+done

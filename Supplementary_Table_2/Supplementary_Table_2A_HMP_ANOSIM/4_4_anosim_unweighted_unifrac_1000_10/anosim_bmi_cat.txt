@@ -1,0 +1,5 @@
+sample size	298.0
+number of groups	3.0
+test statistic	0.0237000232385
+p-value	0.137777
+number of permutations	9999.0

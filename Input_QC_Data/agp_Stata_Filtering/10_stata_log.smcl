@@ -1,0 +1,529 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/brooks/Work/16_6_22_American_Gut/data/analyses/10_stata_log.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 9 Jul 2016, 13:56:45
+
+{com}. 
+. *** NAVIGATE TO FOLDER WITH AMERICAN GUT MAPPING FILE ***
+
+. cd /Users/brooks/Work/16_6_22_American_Gut/data/analyses/
+{res}/Users/brooks/Work/16_6_22_American_Gut/data/analyses
+
+{com}. 
+. *** IMPORT TAB DELIMITED MAPPING FILE ***
+
+. import delimited 00_raw_ag-cleaned.txt
+{res}{text}(459 vars, 8,735 obs)
+
+{com}. * (459 vars, 8,735 obs)
+
+. 
+. *******************************************************************************
+
+. ********************** EXAMINING KEY VARIABLES ********************************
+
+. *******************************************************************************
+
+. drop vioscreen_*
+
+. order race, before(non_food_allergies_beestings)
+
+. order sex, before(non_food_allergies_beestings)
+
+. order age_years, before(non_food_allergies_beestings)
+
+. order bmi, before(non_food_allergies_beestings)
+
+. 
+. *******************************************************************************
+
+. *** CLEAN BMI *** deleted observations are done for factor on raw dataset (not all in order)
+
+. destring bmi, replace ignore("Unknown")
+{txt}bmi: characters{res} U n k o w{txt} removed; {res}replaced {txt}as {res}double
+{txt}(648 missing values generated)
+{res}
+{com}. drop if bmi > 60
+{txt}(988 observations deleted)
+
+{com}. * (988 observations deleted)
+
+. drop if bmi < 10
+{txt}(68 observations deleted)
+
+{com}. * (68 observations deleted)
+
+. sum bmi, d
+
+                             {txt}BMI
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}    13.98          11.09
+{txt} 5%    {res}    17.12          11.15
+{txt}10%    {res}    18.73          11.46       {txt}Obs         {res}      7,679
+{txt}25%    {res}    20.73          11.49       {txt}Sum of Wgt. {res}      7,679
+
+{txt}50%    {res}    23.04                      {txt}Mean          {res} 23.83447
+                        {txt}Largest       Std. Dev.     {res} 5.146806
+{txt}75%    {res}    25.95          56.38
+{txt}90%    {res}    29.85          58.48       {txt}Variance      {res} 26.48961
+{txt}95%    {res}    33.28          58.63       {txt}Skewness      {res} 1.493022
+{txt}99%    {res}    42.94          59.88       {txt}Kurtosis      {res} 7.942063
+
+{com}. /*
+{bf}{err}/{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}.                              BMI
+{err}command {bf}BMI{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. -------------------------------------------------------------
+{bf}{err}-{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}.       Percentiles      Smallest
+{err}command {bf}Percentiles{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}.  1%        13.98          11.09
+{bf}{err}1{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}.  5%        17.12          11.15
+{bf}{err}5{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 10%        18.73          11.46       Obs               7,679
+{bf}{err}10{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 25%        20.73          11.49       Sum of Wgt.       7,679
+{bf}{err}25{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 
+. 50%        23.04                      Mean           23.83447
+{bf}{err}50{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}.                         Largest       Std. Dev.      5.146806
+{err}command {bf}Largest{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. 75%        25.95          56.38
+{bf}{err}75{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 90%        29.85          58.48       Variance       26.48961
+{bf}{err}90{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 95%        33.28          58.63       Skewness       1.493022
+{bf}{err}95{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 99%        42.94          59.88       Kurtosis       7.942063
+{bf}{err}99{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. */
+
+. 
+. hist bmi, frequency
+{txt}(bin={res}38{txt}, start={res}11.09{txt}, width={res}1.2839474{txt})
+{res}
+{com}. graph save Graph "/Users/brooks/Work/16_6_22_American_Gut/data/analyses/11_BMI_Histogram_10_60.gph"
+{err}{p 0 4 2}
+file /Users/brooks/Work/16_6_22_American_Gut/data/analyses/11_BMI_Histogram_10_60.gph
+already exists
+{p_end}
+{txt}{search r(602), local:r(602);}
+
+{com}. 
+. *******************************************************************************
+
+. *** CLEAN age_years ***
+
+. destring age_years, gen(ageF) ignore("Unknown")
+{txt}age_years: characters{res} U n k o w{txt} removed; ageF {res}generated {txt}as {res}byte
+{txt}(142 missing values generated)
+{res}
+{com}. * age_years: characters U n k o w removed; ageF generated as int
+
+. * (661 missing values generated)
+
+. drop if ageF==.
+{txt}(142 observations deleted)
+
+{com}. * (661 observations deleted)
+
+. 
+. hist ageF, frequency
+{txt}(bin={res}38{txt}, start={res}0{txt}, width={res}2.4736842{txt})
+{res}
+{com}. 
+. graph save Graph "/Users/brooks/Work/16_6_22_American_Gut/data/analyses/11_Age_Histogram.gph"
+{err}{p 0 4 2}
+file /Users/brooks/Work/16_6_22_American_Gut/data/analyses/11_Age_Histogram.gph
+already exists
+{p_end}
+{txt}{search r(602), local:r(602);}
+
+{com}. *(file /Users/brooks/Work/16_6_22_American_Gut/data/analyses/11_Age_Histogram.gph saved)
+
+. 
+. sum ageF , d
+
+                          {txt}AGE_YEARS
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        2              0
+{txt} 5%    {res}        9              1
+{txt}10%    {res}       23              1       {txt}Obs         {res}      7,537
+{txt}25%    {res}       35              1       {txt}Sum of Wgt. {res}      7,537
+
+{txt}50%    {res}       48                      {txt}Mean          {res} 46.06103
+                        {txt}Largest       Std. Dev.     {res} 17.74458
+{txt}75%    {res}       60             94
+{txt}90%    {res}       67             94       {txt}Variance      {res} 314.8702
+{txt}95%    {res}       71             94       {txt}Skewness      {res}-.4868692
+{txt}99%    {res}       78             94       {txt}Kurtosis      {res}  2.81976
+
+{com}. /*
+{bf}{err}/{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}.                           AGE_YEARS
+{err}command {bf}AGE_YEARS{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. -------------------------------------------------------------
+{bf}{err}-{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}.       Percentiles      Smallest
+{err}command {bf}Percentiles{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}.  1%            2              0
+{bf}{err}1{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}.  5%            9              0
+{bf}{err}5{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 10%           22              1       Obs               8,074
+{bf}{err}10{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 25%           34              1       Sum of Wgt.       8,074
+{bf}{err}25{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 
+. 50%           48                      Mean           46.07035
+{bf}{err}50{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}.                         Largest       Std. Dev.      17.91236
+{err}command {bf}Largest{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. 75%           60             94
+{bf}{err}75{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 90%           67             94       Variance       320.8527
+{bf}{err}90{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 95%           71            101       Skewness      -.4825545
+{bf}{err}95{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. 99%           79            101       Kurtosis       2.815875
+{bf}{err}99{sf} is not a valid command name
+{txt}{search r(199), local:r(199);}
+
+{com}. */
+
+. 
+. drop if ageF>65
+{txt}(983 observations deleted)
+
+{com}. *(1,063 observations deleted)
+
+. 
+. drop if ageF>55
+{txt}(1,592 observations deleted)
+
+{com}. *(1,714 observations deleted)
+
+. 
+. drop if ageF<10
+{txt}(395 observations deleted)
+
+{com}. *(434 observations deleted)
+
+. 
+. drop if ageF<18
+{txt}(139 observations deleted)
+
+{com}. *(148 observations deleted)
+
+. 
+. 
+. 
+. scatter ageF bmi
+{res}
+{com}. scatter bmi ageF || lfit bmi ageF || regress bmi ageF
+{err}regress is not a twoway plot type
+{txt}{search r(198), local:r(198);}
+
+{com}. scatter bmi ageF || lfit bmi ageFregress bmi ageF
+{err}variable {bf}ageFregress{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. scatter bmi ageF || lfit bmi ageF; regress bmi ageF
+{err}; invalid name
+{txt}{search r(198), local:r(198);}
+
+{com}. scatter bmi ageF || lfit bmi ageF
+{res}
+{com}. regress bmi ageF
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}     4,428
+{txt}{hline 13}{c +}{hline 34}   F(1, 4426)      = {res}   143.55
+{txt}       Model {c |} {res} 3128.51227         1  3128.51227   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  96462.612     4,426   21.794535   {txt}R-squared       ={res}    0.0314
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0312
+{txt}       Total {c |} {res} 99591.1243     4,427  22.4963009   {txt}Root MSE        =   {res} 4.6685
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         bmi{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}ageF {c |}{col 14}{res}{space 2} .0863294{col 26}{space 2} .0072055{col 37}{space 1}   11.98{col 46}{space 3}0.000{col 54}{space 4} .0722031{col 67}{space 3} .1004558
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 20.55377{col 26}{space 2} .2972806{col 37}{space 1}   69.14{col 46}{space 3}0.000{col 54}{space 4} 19.97095{col 67}{space 3} 21.13659
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. describe
+
+{txt}Contains data
+  obs:{res}         4,428                          
+{txt} vars:{res}           195                          
+{txt} size:{res}    20,126,828                          
+{txt}{hline}
+              storage   display    value
+variable name   type    format     label      variable label
+{hline}
+{p 0 48}{res}{bind:sampleid       }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}#SampleID{p_end}
+{p 0 48}{bind:race           }{txt}{bind: str25   }{bind:{txt}%25s      }{space 1}{bind:         }{bind:  }{res}{res}RACE{p_end}
+{p 0 48}{bind:sex            }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SEX{p_end}
+{p 0 48}{bind:age_years      }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}AGE_YEARS{p_end}
+{p 0 48}{bind:ageF           }{txt}{bind: byte    }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}AGE_YEARS{p_end}
+{p 0 48}{bind:bmi            }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}BMI{p_end}
+{p 0 48}{bind:non_food_alle~s}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}NON_FOOD_ALLERGIES_BEESTINGS{p_end}
+{p 0 48}{bind:tonsils_removed}{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}TONSILS_REMOVED{p_end}
+{p 0 48}{bind:country_of_bi~h}{txt}{bind: str36   }{bind:{txt}%36s      }{space 1}{bind:         }{bind:  }{res}{res}COUNTRY_OF_BIRTH{p_end}
+{p 0 48}{bind:pets_other     }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}PETS_OTHER{p_end}
+{p 0 48}{bind:economic_region}{txt}{bind: str14   }{bind:{txt}%14s      }{space 1}{bind:         }{bind:  }{res}{res}ECONOMIC_REGION{p_end}
+{p 0 48}{bind:cancer_treatm~t}{txt}{bind: str17   }{bind:{txt}%17s      }{space 1}{bind:         }{bind:  }{res}{res}CANCER_TREATMENT{p_end}
+{p 0 48}{bind:linkerprimers~e}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}LinkerPrimerSequence{p_end}
+{p 0 48}{bind:liver_disease  }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}LIVER_DISEASE{p_end}
+{p 0 48}{bind:body_product   }{txt}{bind: str13   }{bind:{txt}%13s      }{space 1}{bind:         }{bind:  }{res}{res}BODY_PRODUCT{p_end}
+{p 0 48}{bind:artificial_sw~s}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}ARTIFICIAL_SWEETENERS{p_end}
+{p 0 48}{bind:enabasecount   }{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ENA-BASE-COUNT{p_end}
+{p 0 48}{bind:subset_healthy }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SUBSET_HEALTHY{p_end}
+{p 0 48}{bind:contraceptive  }{txt}{bind: strL    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}CONTRACEPTIVE{p_end}
+{p 0 48}{bind:allergic_to_u~d}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALLERGIC_TO_UNSPECIFIED{p_end}
+{p 0 48}{bind:salted_snacks~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}SALTED_SNACKS_FREQUENCY{p_end}
+{p 0 48}{bind:alcohol_types~d}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALCOHOL_TYPES_UNSPECIFIED{p_end}
+{p 0 48}{bind:age_cat        }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}AGE_CAT{p_end}
+{p 0 48}{bind:subset_bmi     }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SUBSET_BMI{p_end}
+{p 0 48}{bind:migraine       }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}MIGRAINE{p_end}
+{p 0 48}{bind:exercise_freq~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}EXERCISE_FREQUENCY{p_end}
+{p 0 48}{bind:host_common_n~e}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}HOST_COMMON_NAME{p_end}
+{p 0 48}{bind:alcohol_types~o}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALCOHOL_TYPES_SPIRITSHARD_ALCOHOL{p_end}
+{p 0 48}{bind:bowel_moveme~cy}{txt}{bind: str13   }{bind:{txt}%13s      }{space 1}{bind:         }{bind:  }{res}{res}BOWEL_MOVEMENT_FREQUENCY{p_end}
+{p 0 48}{bind:sibo           }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}SIBO{p_end}
+{p 0 48}{bind:fermented_pla~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}FERMENTED_PLANT_FREQUENCY{p_end}
+{p 0 48}{bind:sugary_sweets~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}SUGARY_SWEETS_FREQUENCY{p_end}
+{p 0 48}{bind:dog            }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}DOG{p_end}
+{p 0 48}{bind:collection_date}{txt}{bind: str10   }{bind:{txt}%10s      }{space 1}{bind:         }{bind:  }{res}{res}COLLECTION_DATE{p_end}
+{p 0 48}{bind:anonymized_name}{txt}{bind: str10   }{bind:{txt}%10s      }{space 1}{bind:         }{bind:  }{res}{res}ANONYMIZED_NAME{p_end}
+{p 0 48}{bind:prepared_meal~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}PREPARED_MEALS_FREQUENCY{p_end}
+{p 0 48}{bind:homecooked_me~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}HOMECOOKED_MEALS_FREQUENCY{p_end}
+{p 0 48}{bind:height_units   }{txt}{bind: str11   }{bind:{txt}%11s      }{space 1}{bind:         }{bind:  }{res}{res}HEIGHT_UNITS{p_end}
+{p 0 48}{bind:env_feature    }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}ENV_FEATURE{p_end}
+{p 0 48}{bind:nail_biter     }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}NAIL_BITER{p_end}
+{p 0 48}{bind:vitamin_d_sup~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}VITAMIN_D_SUPPLEMENT_FREQUENCY{p_end}
+{p 0 48}{bind:add_adhd       }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}ADD_ADHD{p_end}
+{p 0 48}{bind:ready_to_eat_~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}READY_TO_EAT_MEALS_FREQUENCY{p_end}
+{p 0 48}{bind:ibd            }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}IBD{p_end}
+{p 0 48}{bind:cat            }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}CAT{p_end}
+{p 0 48}{bind:host_taxid     }{txt}{bind: int     }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}HOST_TAXID{p_end}
+{p 0 48}{bind:ibs            }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}IBS{p_end}
+{p 0 48}{bind:collection_ti~p}{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}COLLECTION_TIMESTAMP{p_end}
+{p 0 48}{bind:multivitamin   }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MULTIVITAMIN{p_end}
+{p 0 48}{bind:cancer         }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}CANCER{p_end}
+{p 0 48}{bind:acne_medicati~c}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ACNE_MEDICATION_OTC{p_end}
+{p 0 48}{bind:allergic_to_i~r}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALLERGIC_TO_I_HAVE_NO_FOOD_ALLERGIES_THAT_I_KNOW_OF{p_end}
+{p 0 48}{bind:diabetes       }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}DIABETES{p_end}
+{p 0 48}{bind:cdiff          }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}CDIFF{p_end}
+{p 0 48}{bind:mental_illnes~o}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS_TYPE_BIPOLAR_DISORDER{p_end}
+{p 0 48}{bind:allergic_to_o~r}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALLERGIC_TO_OTHER{p_end}
+{p 0 48}{bind:height_cm      }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}HEIGHT_CM{p_end}
+{p 0 48}{bind:chickenpox     }{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}CHICKENPOX{p_end}
+{p 0 48}{bind:assigned_from~o}{txt}{bind: str4    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ASSIGNED_FROM_GEO{p_end}
+{p 0 48}{bind:body_site      }{txt}{bind: str19   }{bind:{txt}%19s      }{space 1}{bind:         }{bind:  }{res}{res}BODY_SITE{p_end}
+{p 0 48}{bind:fungal_overgr~h}{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}FUNGAL_OVERGROWTH{p_end}
+{p 0 48}{bind:flossing_freq~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}FLOSSING_FREQUENCY{p_end}
+{p 0 48}{bind:one_liter_of_~n}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}ONE_LITER_OF_WATER_A_DAY_FREQUENCY{p_end}
+{p 0 48}{bind:cosmetics_fre~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}COSMETICS_FREQUENCY{p_end}
+{p 0 48}{bind:host_subject_id}{txt}{bind: str128  }{bind:{txt}%128s     }{space 1}{bind:         }{bind:  }{res}{res}HOST_SUBJECT_ID{p_end}
+{p 0 48}{bind:non_food_alle~n}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}NON_FOOD_ALLERGIES_SUN{p_end}
+{p 0 48}{bind:cardiovascula~e}{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}CARDIOVASCULAR_DISEASE{p_end}
+{p 0 48}{bind:fed_as_infant  }{txt}{bind: str36   }{bind:{txt}%36s      }{space 1}{bind:         }{bind:  }{res}{res}FED_AS_INFANT{p_end}
+{p 0 48}{bind:weight_units   }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}WEIGHT_UNITS{p_end}
+{p 0 48}{bind:country        }{txt}{bind: str20   }{bind:{txt}%20s      }{space 1}{bind:         }{bind:  }{res}{res}COUNTRY{p_end}
+{p 0 48}{bind:acid_reflux    }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}ACID_REFLUX{p_end}
+{p 0 48}{bind:common_name    }{txt}{bind: str33   }{bind:{txt}%33s      }{space 1}{bind:         }{bind:  }{res}{res}COMMON_NAME{p_end}
+{p 0 48}{bind:non_food_alle~d}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}NON_FOOD_ALLERGIES_UNSPECIFIED{p_end}
+{p 0 48}{bind:flu_vaccine_d~e}{txt}{bind: str51   }{bind:{txt}%51s      }{space 1}{bind:         }{bind:  }{res}{res}FLU_VACCINE_DATE{p_end}
+{p 0 48}{bind:pregnant       }{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}PREGNANT{p_end}
+{p 0 48}{bind:census_region  }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}CENSUS_REGION{p_end}
+{p 0 48}{bind:teethbrushing~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}TEETHBRUSHING_FREQUENCY{p_end}
+{p 0 48}{bind:last_move      }{txt}{bind: str67   }{bind:{txt}%67s      }{space 1}{bind:         }{bind:  }{res}{res}LAST_MOVE{p_end}
+{p 0 48}{bind:depression_bi~a}{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}DEPRESSION_BIPOLAR_SCHIZOPHRENIA{p_end}
+{p 0 48}{bind:frozen_desser~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}FROZEN_DESSERT_FREQUENCY{p_end}
+{p 0 48}{bind:livingwith     }{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}LIVINGWITH{p_end}
+{p 0 48}{bind:clinical_cond~n}{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}CLINICAL_CONDITION{p_end}
+{p 0 48}{bind:altitude       }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}ALTITUDE{p_end}
+{p 0 48}{bind:last_travel    }{txt}{bind: str68   }{bind:{txt}%68s      }{space 1}{bind:         }{bind:  }{res}{res}LAST_TRAVEL{p_end}
+{p 0 48}{bind:dna_extracted  }{txt}{bind: str4    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}DNA_EXTRACTED{p_end}
+{p 0 48}{bind:roommates      }{txt}{bind: str15   }{bind:{txt}%15s      }{space 1}{bind:         }{bind:  }{res}{res}ROOMMATES{p_end}
+{p 0 48}{bind:allergic_to_t~s}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALLERGIC_TO_TREE_NUTS{p_end}
+{p 0 48}{bind:asd            }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}ASD{p_end}
+{p 0 48}{bind:vivid_dreams   }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}VIVID_DREAMS{p_end}
+{p 0 48}{bind:lung_disease   }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}LUNG_DISEASE{p_end}
+{p 0 48}{bind:alcohol_frequ~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}ALCOHOL_FREQUENCY{p_end}
+{p 0 48}{bind:poultry_frequ~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}POULTRY_FREQUENCY{p_end}
+{p 0 48}{bind:dominant_hand  }{txt}{bind: str17   }{bind:{txt}%17s      }{space 1}{bind:         }{bind:  }{res}{res}DOMINANT_HAND{p_end}
+{p 0 48}{bind:roommates_in_~y}{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ROOMMATES_IN_STUDY{p_end}
+{p 0 48}{bind:survey_id      }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}SURVEY_ID{p_end}
+{p 0 48}{bind:subset_antibi~y}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SUBSET_ANTIBIOTIC_HISTORY{p_end}
+{p 0 48}{bind:smoking_frequ~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}SMOKING_FREQUENCY{p_end}
+{p 0 48}{bind:mental_illness }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS{p_end}
+{p 0 48}{bind:depth          }{txt}{bind: byte    }{bind:{txt}%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}DEPTH{p_end}
+{p 0 48}{bind:required_samp~s}{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}REQUIRED_SAMPLE_INFO_STATUS{p_end}
+{p 0 48}{bind:breastmilk_fo~e}{txt}{bind: str45   }{bind:{txt}%45s      }{space 1}{bind:         }{bind:  }{res}{res}BREASTMILK_FORMULA_ENSURE{p_end}
+{p 0 48}{bind:barcodesequence}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}BarcodeSequence{p_end}
+{p 0 48}{bind:mental_illnes~n}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS_TYPE_DEPRESSION{p_end}
+{p 0 48}{bind:kidney_disease }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}KIDNEY_DISEASE{p_end}
+{p 0 48}{bind:collection_time}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}COLLECTION_TIME{p_end}
+{p 0 48}{bind:collection_mo~h}{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}COLLECTION_MONTH{p_end}
+{p 0 48}{bind:vitamin_b_sup~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}VITAMIN_B_SUPPLEMENT_FREQUENCY{p_end}
+{p 0 48}{bind:subset_ibd     }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SUBSET_IBD{p_end}
+{p 0 48}{bind:alcohol_types~s}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALCOHOL_TYPES_SOUR_BEERS{p_end}
+{p 0 48}{bind:physical_spec~n}{txt}{bind: str6    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}PHYSICAL_SPECIMEN_LOCATION{p_end}
+{p 0 48}{bind:mental_illnes~a}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS_TYPE_PTSD_POSTTRAUMATIC_STRESS_DISORDER{p_end}
+{p 0 48}{bind:alcohol_~d_wine}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALCOHOL_TYPES_RED_WINE{p_end}
+{p 0 48}{bind:enachecklist   }{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ENA-CHECKLIST{p_end}
+{p 0 48}{bind:gluten         }{txt}{bind: str77   }{bind:{txt}%77s      }{space 1}{bind:         }{bind:  }{res}{res}GLUTEN{p_end}
+{p 0 48}{bind:weight_kg      }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}WEIGHT_KG{p_end}
+{p 0 48}{bind:subset_age     }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SUBSET_AGE{p_end}
+{p 0 48}{bind:milk_substitu~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}MILK_SUBSTITUTE_FREQUENCY{p_end}
+{p 0 48}{bind:lowgrain_diet~e}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}LOWGRAIN_DIET_TYPE{p_end}
+{p 0 48}{bind:seafood_frequ~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}SEAFOOD_FREQUENCY{p_end}
+{p 0 48}{bind:allergic_to_p~s}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALLERGIC_TO_PEANUTS{p_end}
+{p 0 48}{bind:probiotic_fre~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}PROBIOTIC_FREQUENCY{p_end}
+{p 0 48}{bind:mental_illnes~v}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS_TYPE_BULIMIA_NERVOSA{p_end}
+{p 0 48}{bind:olive_oil      }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}OLIVE_OIL{p_end}
+{p 0 48}{bind:skin_condition }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}SKIN_CONDITION{p_end}
+{p 0 48}{bind:mental_illnes~i}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS_TYPE_SCHIZOPHRENIA{p_end}
+{p 0 48}{bind:title          }{txt}{bind: str20   }{bind:{txt}%20s      }{space 1}{bind:         }{bind:  }{res}{res}TITLE{p_end}
+{p 0 48}{bind:enaspotcount   }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ENA-SPOT-COUNT{p_end}
+{p 0 48}{bind:exercise_loca~n}{txt}{bind: str21   }{bind:{txt}%21s      }{space 1}{bind:         }{bind:  }{res}{res}EXERCISE_LOCATION{p_end}
+{p 0 48}{bind:non_food_alle~k}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}NON_FOOD_ALLERGIES_POISON_IVYOAK{p_end}
+{p 0 48}{bind:other_supplem~y}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}OTHER_SUPPLEMENT_FREQUENCY{p_end}
+{p 0 48}{bind:subset_diabetes}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SUBSET_DIABETES{p_end}
+{p 0 48}{bind:allergic_to_s~h}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALLERGIC_TO_SHELLFISH{p_end}
+{p 0 48}{bind:fruit_frequency}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}FRUIT_FREQUENCY{p_end}
+{p 0 48}{bind:has_physical_~n}{txt}{bind: str4    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}HAS_PHYSICAL_SPECIMEN{p_end}
+{p 0 48}{bind:whole_grain_f~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}WHOLE_GRAIN_FREQUENCY{p_end}
+{p 0 48}{bind:non_food_alle~r}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}NON_FOOD_ALLERGIES_PET_DANDER{p_end}
+{p 0 48}{bind:country_resid~e}{txt}{bind: str14   }{bind:{txt}%14s      }{space 1}{bind:         }{bind:  }{res}{res}COUNTRY_RESIDENCE{p_end}
+{p 0 48}{bind:sleep_duration }{txt}{bind: str17   }{bind:{txt}%17s      }{space 1}{bind:         }{bind:  }{res}{res}SLEEP_DURATION{p_end}
+{p 0 48}{bind:public         }{txt}{bind: str4    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}PUBLIC{p_end}
+{p 0 48}{bind:lactose        }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}LACTOSE{p_end}
+{p 0 48}{bind:collection_se~n}{txt}{bind: str6    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}COLLECTION_SEASON{p_end}
+{p 0 48}{bind:whole_eggs     }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}WHOLE_EGGS{p_end}
+{p 0 48}{bind:bowel_moveme~ty}{txt}{bind: str71   }{bind:{txt}%71s      }{space 1}{bind:         }{bind:  }{res}{res}BOWEL_MOVEMENT_QUALITY{p_end}
+{p 0 48}{bind:mental_illnes~b}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS_TYPE_SUBSTANCE_ABUSE{p_end}
+{p 0 48}{bind:types_of_plants}{txt}{bind: str12   }{bind:{txt}%12s      }{space 1}{bind:         }{bind:  }{res}{res}TYPES_OF_PLANTS{p_end}
+{p 0 48}{bind:deodorant_use  }{txt}{bind: str57   }{bind:{txt}%57s      }{space 1}{bind:         }{bind:  }{res}{res}DEODORANT_USE{p_end}
+{p 0 48}{bind:longitude      }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}LONGITUDE{p_end}
+{p 0 48}{bind:weight_change  }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}WEIGHT_CHANGE{p_end}
+{p 0 48}{bind:seasonal_alle~s}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SEASONAL_ALLERGIES{p_end}
+{p 0 48}{bind:thyroid        }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}THYROID{p_end}
+{p 0 48}{bind:elevation      }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ELEVATION{p_end}
+{p 0 48}{bind:csection       }{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}CSECTION{p_end}
+{p 0 48}{bind:level_of_educ~n}{txt}{bind: str36   }{bind:{txt}%36s      }{space 1}{bind:         }{bind:  }{res}{res}LEVEL_OF_EDUCATION{p_end}
+{p 0 48}{bind:alcohol_~e_wine}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALCOHOL_TYPES_WHITE_WINE{p_end}
+{p 0 48}{bind:alzheimers     }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}ALZHEIMERS{p_end}
+{p 0 48}{bind:sample_type    }{txt}{bind: str11   }{bind:{txt}%11s      }{space 1}{bind:         }{bind:  }{res}{res}SAMPLE_TYPE{p_end}
+{p 0 48}{bind:non_food_alle~c}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}NON_FOOD_ALLERGIES_DRUG_EG_PENICILLIN{p_end}
+{p 0 48}{bind:mental_illnes~r}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS_TYPE_ANOREXIA_NERVOSA{p_end}
+{p 0 48}{bind:sugar_sweeten~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}SUGAR_SWEETENED_DRINK_FREQUENCY{p_end}
+{p 0 48}{bind:env_biome      }{txt}{bind: str27   }{bind:{txt}%27s      }{space 1}{bind:         }{bind:  }{res}{res}ENV_BIOME{p_end}
+{p 0 48}{bind:pets_other_fr~t}{txt}{bind: str114  }{bind:{txt}%114s     }{space 1}{bind:         }{bind:  }{res}{res}PETS_OTHER_FREETEXT{p_end}
+{p 0 48}{bind:consume_anima~x}{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}CONSUME_ANIMAL_PRODUCTS_ABX{p_end}
+{p 0 48}{bind:env_matter     }{txt}{bind: str11   }{bind:{txt}%11s      }{space 1}{bind:         }{bind:  }{res}{res}ENV_MATTER{p_end}
+{p 0 48}{bind:acne_medication}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ACNE_MEDICATION{p_end}
+{p 0 48}{bind:epilepsy_or_s~r}{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}EPILEPSY_OR_SEIZURE_DISORDER{p_end}
+{p 0 48}{bind:milk_cheese_f~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}MILK_CHEESE_FREQUENCY{p_end}
+{p 0 48}{bind:alcohol_types~r}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALCOHOL_TYPES_BEERCIDER{p_end}
+{p 0 48}{bind:antibiotic_hi~y}{txt}{bind: str46   }{bind:{txt}%46s      }{space 1}{bind:         }{bind:  }{res}{res}ANTIBIOTIC_HISTORY{p_end}
+{p 0 48}{bind:high_fat_red_~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}HIGH_FAT_RED_MEAT_FREQUENCY{p_end}
+{p 0 48}{bind:physical_spec~g}{txt}{bind: str4    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}PHYSICAL_SPECIMEN_REMAINING{p_end}
+{p 0 48}{bind:softener       }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SOFTENER{p_end}
+{p 0 48}{bind:body_habitat   }{txt}{bind: str18   }{bind:{txt}%18s      }{space 1}{bind:         }{bind:  }{res}{res}BODY_HABITAT{p_end}
+{p 0 48}{bind:appendix_remo~d}{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}APPENDIX_REMOVED{p_end}
+{p 0 48}{bind:drinking_wate~e}{txt}{bind: str8    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}DRINKING_WATER_SOURCE{p_end}
+{p 0 48}{bind:bmi_corrected  }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}BMI_CORRECTED{p_end}
+{p 0 48}{bind:diabetes_type  }{txt}{bind: str16   }{bind:{txt}%16s      }{space 1}{bind:         }{bind:  }{res}{res}DIABETES_TYPE{p_end}
+{p 0 48}{bind:bmi_cat        }{txt}{bind: str11   }{bind:{txt}%11s      }{space 1}{bind:         }{bind:  }{res}{res}BMI_CAT{p_end}
+{p 0 48}{bind:diet_type      }{txt}{bind: str32   }{bind:{txt}%32s      }{space 1}{bind:         }{bind:  }{res}{res}DIET_TYPE{p_end}
+{p 0 48}{bind:red_meat_freq~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}RED_MEAT_FREQUENCY{p_end}
+{p 0 48}{bind:autoimmune     }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}AUTOIMMUNE{p_end}
+{p 0 48}{bind:birth_year     }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}BIRTH_YEAR{p_end}
+{p 0 48}{bind:alcohol_consu~n}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}ALCOHOL_CONSUMPTION{p_end}
+{p 0 48}{bind:description    }{txt}{bind: str39   }{bind:{txt}%39s      }{space 1}{bind:         }{bind:  }{res}{res}Description{p_end}
+{p 0 48}{bind:meat_eggs_fre~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}MEAT_EGGS_FREQUENCY{p_end}
+{p 0 48}{bind:latitude       }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}LATITUDE{p_end}
+{p 0 48}{bind:vegetable_fre~y}{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}VEGETABLE_FREQUENCY{p_end}
+{p 0 48}{bind:pool_frequency }{txt}{bind: str29   }{bind:{txt}%29s      }{space 1}{bind:         }{bind:  }{res}{res}POOL_FREQUENCY{p_end}
+{p 0 48}{bind:pku            }{txt}{bind: str65   }{bind:{txt}%65s      }{space 1}{bind:         }{bind:  }{res}{res}PKU{p_end}
+{p 0 48}{bind:state          }{txt}{bind: str28   }{bind:{txt}%28s      }{space 1}{bind:         }{bind:  }{res}{res}STATE{p_end}
+{p 0 48}{bind:age_corrected  }{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}AGE_CORRECTED{p_end}
+{p 0 48}{bind:mental_illnes~d}{txt}{bind: str7    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}MENTAL_ILLNESS_TYPE_UNSPECIFIED{p_end}
+{p 0 48}{bind:simple_body_s~e}{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}SIMPLE_BODY_SITE{p_end}
+{p 0 48}{bind:title_acronym  }{txt}{bind: str3    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}TITLE_ACRONYM{p_end}
+{p 0 48}{bind:title_body_site}{txt}{bind: str9    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}TITLE_BODY_SITE{p_end}
+{p 0 48}{bind:hmp_site       }{txt}{bind: str5    }{bind:{txt}%9s       }{space 1}{bind:         }{bind:  }{res}{res}HMP_SITE{p_end}
+{txt}{hline}
+Sorted by: 
+{res}     Note: Dataset has changed since last saved.
+
+{com}. export delimited using "/Users/brooks/Work/16_6_22_American_Gut/data/analyses/12_map_trim_basic.csv", delimiter(tab) replace
+{res}{txt}(note: file /Users/brooks/Work/16_6_22_American_Gut/data/analyses/12_map_trim_basic.csv not found)
+{txt}file /Users/brooks/Work/16_6_22_American_Gut/data/analyses/12_map_trim_basic.csv saved
+
+{com}. save "/Users/brooks/Desktop/ag_cleanup_env.dta"
+{txt}file /Users/brooks/Desktop/ag_cleanup_env.dta saved
+
+{com}. 

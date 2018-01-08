@@ -1,0 +1,356 @@
+ - ALL INTRA-GROUP -
+   Mean Diversity    :0.844581068639
+   Standard Deviation:0.0467551663029
+
+ - ALL INTER-GROUP -
+   Mean Diversity    :0.845945263678
+   Standard Deviation:0.0465050197065
+
+ ----- INTRA-GROUP COMPARISONS ----- 
+ - Intra: 50s - 
+   Mean Diversity    : 0.854659757452
+   Standard Deviation: 0.045863210069
+
+ - Intra: 30s - 
+   Mean Diversity    : 0.843891795593
+   Standard Deviation: 0.0476543415594
+
+ - Intra: 40s - 
+   Mean Diversity    : 0.841628438844
+   Standard Deviation: 0.0445870024074
+
+ - Intra: teen - 
+   Mean Diversity    : 0.807039989413
+   Standard Deviation: 0.0416514854047
+
+ - Intra: 20s - 
+   Mean Diversity    : 0.842907668507
+   Standard Deviation: 0.052526947795
+
+ ----- INTER-GROUP COMPARISONS ----- 
+ - Inter: 50s - 20s - 
+   Mean Diversity    : 0.85160860015
+   Standard Deviation: 0.0478208976565
+
+ - Inter: 30s - 50s - 
+   Mean Diversity    : 0.850090650268
+   Standard Deviation: 0.0462628145363
+
+ - Inter: 30s - teen - 
+   Mean Diversity    : 0.829645599525
+   Standard Deviation: 0.0446421631805
+
+ - Inter: 30s - 40s - 
+   Mean Diversity    : 0.843404709782
+   Standard Deviation: 0.0454310109485
+
+ - Inter: 30s - 20s - 
+   Mean Diversity    : 0.844749707269
+   Standard Deviation: 0.0487396786446
+
+ - Inter: 40s - 50s - 
+   Mean Diversity    : 0.848482739606
+   Standard Deviation: 0.0449499231317
+
+ - Inter: 40s - 20s - 
+   Mean Diversity    : 0.844845733131
+   Standard Deviation: 0.0476384479532
+
+ - Inter: teen - 50s - 
+   Mean Diversity    : 0.838582275643
+   Standard Deviation: 0.0441574890008
+
+ - Inter: teen - 40s - 
+   Mean Diversity    : 0.83047526292
+   Standard Deviation: 0.0426471794792
+
+ - Inter: teen - 20s - 
+   Mean Diversity    : 0.827513499181
+   Standard Deviation: 0.0470181087051
+
+ ----- STATISTICAL COMPARISONS -----
+
+ --- ALL GROUPS INTRA VS INTER --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: All Intra-Group with All Inter-Group
+    List #1 Length: 250727 | List #2 Length: 693898
+    Test Statistic: 85907179426.0
+    P-Value (onetailed): 1.14067124821e-20
+    P-Value (twotailed): 2.28134249641e-20
+
+ --- COMPARISON OF INTRA-GROUP DISTANCES BETWEEN GROUPS --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-50s with Intra-20s
+    List #1 Length: 39903 | List #2 Length: 18145
+    Test Statistic: 413233102.0
+    P-Value (onetailed): 3.59316215643e-165
+    P-Value (twotailed): 7.18632431286e-165
+    P-Value Bonferroni Corrected for 10.0 tests: 3.59316215643e-164
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 7.18632431286e-164
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-30s with Intra-50s
+    List #1 Length: 90951 | List #2 Length: 39903
+    Test Statistic: 1577401563.0
+    P-Value (onetailed): 0.0
+    P-Value (twotailed): 0.0
+    P-Value Bonferroni Corrected for 10.0 tests: 0.0
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 0.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-30s with Intra-teen
+    List #1 Length: 90951 | List #2 Length: 253
+    Test Statistic: 16550736.0
+    P-Value (onetailed): 8.11453932561e-34
+    P-Value (twotailed): 1.62290786512e-33
+    P-Value Bonferroni Corrected for 10.0 tests: 8.11453932561e-33
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 1.62290786512e-32
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-30s with Intra-40s
+    List #1 Length: 90951 | List #2 Length: 101475
+    Test Statistic: 4710807985.0
+    P-Value (onetailed): 1.32708551281e-15
+    P-Value (twotailed): 2.65417102562e-15
+    P-Value Bonferroni Corrected for 10.0 tests: 1.32708551281e-14
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 2.65417102562e-14
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-30s with Intra-20s
+    List #1 Length: 90951 | List #2 Length: 18145
+    Test Statistic: 837360065.0
+    P-Value (onetailed): 0.000812215434569
+    P-Value (twotailed): 0.00162443086914
+    P-Value Bonferroni Corrected for 10.0 tests: 0.00812215434569
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 0.0162443086914
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-40s with Intra-50s
+    List #1 Length: 101475 | List #2 Length: 39903
+    Test Statistic: 1708715064.0
+    P-Value (onetailed): 0.0
+    P-Value (twotailed): 0.0
+    P-Value Bonferroni Corrected for 10.0 tests: 0.0
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 0.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-40s with Intra-20s
+    List #1 Length: 101475 | List #2 Length: 18145
+    Test Statistic: 915794709.0
+    P-Value (onetailed): 0.129431640187
+    P-Value (twotailed): 0.258863280374
+    P-Value Bonferroni Corrected for 10.0 tests: 1.0
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 1.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-teen with Intra-50s
+    List #1 Length: 253 | List #2 Length: 39903
+    Test Statistic: 2272601.0
+    P-Value (onetailed): 8.29968215636e-52
+    P-Value (twotailed): 1.65993643127e-51
+    P-Value Bonferroni Corrected for 10.0 tests: 8.29968215636e-51
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 1.65993643127e-50
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-teen with Intra-40s
+    List #1 Length: 253 | List #2 Length: 101475
+    Test Statistic: 7311230.0
+    P-Value (onetailed): 1.15941460595e-32
+    P-Value (twotailed): 2.31882921189e-32
+    P-Value Bonferroni Corrected for 10.0 tests: 1.15941460595e-31
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 2.31882921189e-31
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-teen with Intra-20s
+    List #1 Length: 253 | List #2 Length: 18145
+    Test Statistic: 1350455.0
+    P-Value (onetailed): 1.00492361015e-29
+    P-Value (twotailed): 2.00984722031e-29
+    P-Value Bonferroni Corrected for 10.0 tests: 1.00492361015e-28
+    P-Value Bonferroni Corrected for 10.0 tests (twotailed): 2.00984722031e-28
+
+
+ --- COMPARISON OF INTRA-GROUP DISTANCE WITH INTER- TO EACH OTHER GROUP --- 
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-50s with Inter-30s-50s
+    List #1 Length: 39903 | List #2 Length: 120841
+    Test Statistic: 2548403370.0
+    P-Value (onetailed): 7.21196606781e-66
+    P-Value (twotailed): 1.44239321356e-65
+    P-Value Bonferroni Corrected for 20 tests: 1.44239321356e-64
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 2.88478642712e-64
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-50s with Inter-40s-50s
+    List #1 Length: 39903 | List #2 Length: 127633
+    Test Statistic: 2740566242.0
+    P-Value (onetailed): 1.53725818216e-117
+    P-Value (twotailed): 3.07451636432e-117
+    P-Value Bonferroni Corrected for 20 tests: 3.07451636432e-116
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 6.14903272864e-116
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-50s with Inter-teen-50s
+    List #1 Length: 39903 | List #2 Length: 6509
+    Test Statistic: 155269217.0
+    P-Value (onetailed): 4.83538226567e-142
+    P-Value (twotailed): 9.67076453134e-142
+    P-Value Bonferroni Corrected for 20 tests: 9.67076453134e-141
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 1.93415290627e-140
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-50s with Inter-50s-20s
+    List #1 Length: 39903 | List #2 Length: 54053
+    Test Statistic: 1122961600.0
+    P-Value (onetailed): 1.18429884499e-27
+    P-Value (twotailed): 2.36859768998e-27
+    P-Value Bonferroni Corrected for 20 tests: 2.36859768998e-26
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 4.73719537996e-26
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-30s with Inter-30s-50s
+    List #1 Length: 90951 | List #2 Length: 120841
+    Test Statistic: 5087336700.0
+    P-Value (onetailed): 6.54135327556e-189
+    P-Value (twotailed): 1.30827065511e-188
+    P-Value Bonferroni Corrected for 20 tests: 1.30827065511e-187
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 2.61654131022e-187
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-30s with Inter-30s-40s
+    List #1 Length: 90951 | List #2 Length: 192577
+    Test Statistic: 8807387119.0
+    P-Value (onetailed): 0.0071315927445
+    P-Value (twotailed): 0.014263185489
+    P-Value Bonferroni Corrected for 20 tests: 0.14263185489
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 0.28526370978
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-30s with Inter-30s-teen
+    List #1 Length: 90951 | List #2 Length: 9821
+    Test Statistic: 525330841.0
+    P-Value (onetailed): 5.89209394923e-182
+    P-Value (twotailed): 1.17841878985e-181
+    P-Value Bonferroni Corrected for 20 tests: 1.17841878985e-180
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 2.35683757969e-180
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-30s with Inter-30s-20s
+    List #1 Length: 90951 | List #2 Length: 81557
+    Test Statistic: 3696858245.0
+    P-Value (onetailed): 0.122857597395
+    P-Value (twotailed): 0.245715194789
+    P-Value Bonferroni Corrected for 20 tests: 1.0
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 1.0
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-40s with Inter-40s-50s
+    List #1 Length: 101475 | List #2 Length: 127633
+    Test Statistic: 5955149334.0
+    P-Value (onetailed): 1.12626121062e-240
+    P-Value (twotailed): 2.25252242125e-240
+    P-Value Bonferroni Corrected for 20 tests: 2.25252242125e-239
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 4.5050448425e-239
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-40s with Inter-30s-40s
+    List #1 Length: 101475 | List #2 Length: 192577
+    Test Statistic: 9621825766.0
+    P-Value (onetailed): 4.83741566948e-12
+    P-Value (twotailed): 9.67483133896e-12
+    P-Value Bonferroni Corrected for 20 tests: 9.67483133896e-11
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 1.93496626779e-10
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-40s with Inter-teen-40s
+    List #1 Length: 101475 | List #2 Length: 10373
+    Test Statistic: 603134749.0
+    P-Value (onetailed): 3.52341818106e-133
+    P-Value (twotailed): 7.04683636212e-133
+    P-Value Bonferroni Corrected for 20 tests: 7.04683636212e-132
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 1.40936727242e-131
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-40s with Inter-40s-20s
+    List #1 Length: 101475 | List #2 Length: 86141
+    Test Statistic: 4250613555.0
+    P-Value (onetailed): 5.2334396879e-25
+    P-Value (twotailed): 1.04668793758e-24
+    P-Value Bonferroni Corrected for 20 tests: 1.04668793758e-23
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 2.09337587516e-23
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-teen with Inter-teen-50s
+    List #1 Length: 253 | List #2 Length: 6509
+    Test Statistic: 498484.0
+    P-Value (onetailed): 7.42440074666e-27
+    P-Value (twotailed): 1.48488014933e-26
+    P-Value Bonferroni Corrected for 20 tests: 1.48488014933e-25
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 2.96976029866e-25
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-teen with Inter-30s-teen
+    List #1 Length: 253 | List #2 Length: 9821
+    Test Statistic: 886131.0
+    P-Value (onetailed): 3.11312990858e-15
+    P-Value (twotailed): 6.22625981716e-15
+    P-Value Bonferroni Corrected for 20 tests: 6.22625981716e-14
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 1.24525196343e-13
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-teen with Inter-teen-40s
+    List #1 Length: 253 | List #2 Length: 10373
+    Test Statistic: 908069.0
+    P-Value (onetailed): 2.58895754153e-17
+    P-Value (twotailed): 5.17791508306e-17
+    P-Value Bonferroni Corrected for 20 tests: 5.17791508306e-16
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 1.03558301661e-15
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-teen with Inter-teen-20s
+    List #1 Length: 253 | List #2 Length: 4393
+    Test Statistic: 417151.0
+    P-Value (onetailed): 1.20298438184e-11
+    P-Value (twotailed): 2.40596876367e-11
+    P-Value Bonferroni Corrected for 20 tests: 2.40596876367e-10
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 4.81193752734e-10
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-20s with Inter-50s-20s
+    List #1 Length: 18145 | List #2 Length: 54053
+    Test Statistic: 441116036.0
+    P-Value (onetailed): 8.47308676731e-92
+    P-Value (twotailed): 1.69461735346e-91
+    P-Value Bonferroni Corrected for 20 tests: 1.69461735346e-90
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 3.38923470692e-90
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-20s with Inter-30s-20s
+    List #1 Length: 18145 | List #2 Length: 81557
+    Test Statistic: 726661079.0
+    P-Value (onetailed): 7.74967730241e-05
+    P-Value (twotailed): 0.000154993546048
+    P-Value Bonferroni Corrected for 20 tests: 0.00154993546048
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 0.00309987092097
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-20s with Inter-40s-20s
+    List #1 Length: 18145 | List #2 Length: 86141
+    Test Statistic: 765026474.0
+    P-Value (onetailed): 3.84636652418e-06
+    P-Value (twotailed): 7.69273304836e-06
+    P-Value Bonferroni Corrected for 20 tests: 7.69273304836e-05
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 0.000153854660967
+
+Mann Whitney U - Nonparametric Rank Test
+    Comparing: Intra-20s with Inter-teen-20s
+    List #1 Length: 18145 | List #2 Length: 4393
+    Test Statistic: 47289523.0
+    P-Value (onetailed): 1.44882459902e-82
+    P-Value (twotailed): 2.89764919804e-82
+    P-Value Bonferroni Corrected for 20 tests: 2.89764919804e-81
+    P-Value Bonferroni Corrected for 20 tests (twotailed): 5.79529839608e-81
+

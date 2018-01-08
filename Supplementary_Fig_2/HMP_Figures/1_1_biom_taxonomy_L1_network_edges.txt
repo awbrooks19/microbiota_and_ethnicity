@@ -1,0 +1,17 @@
+p__Lentisphaerae	k__	p__Tenericutes	k__	0.232504783102	5.06821067422e-05
+p__Lentisphaerae	k__	p__	k__	0.252344029664	1.03661911717e-05
+p__Actinobacteria	k__	p__Tenericutes	k__	0.282408090146	7.20057387194e-07
+p__Actinobacteria	k__	p__Synergistetes	k__	0.213046642155	0.000211456114694
+p__Actinobacteria	k__	p__Bacteroidetes	k__	-0.461992221557	3.66988855478e-17
+p__Actinobacteria	k__	p__Firmicutes	k__	0.450560185816	2.6430119264e-16
+p__Actinobacteria	k__	p__Verrucomicrobia	k__	0.233008819677	4.87597213623e-05
+p__Tenericutes	k__	p__	k__	0.221879400458	0.000112284819498
+p__Tenericutes	k__	p__Synergistetes	k__	0.199844343565	0.000519641283963
+p__Tenericutes	k__	p__Bacteroidetes	k__	-0.508858560276	4.94095285754e-21
+p__Tenericutes	k__	p__Firmicutes	k__	0.458065508317	7.29122567853e-17
+p__Tenericutes	k__	p__Verrucomicrobia	k__	0.327487046175	7.03924622868e-09
+p__	k__	p__Bacteroidetes	k__	-0.243759578726	2.09415238012e-05
+p__	k__	p__Firmicutes	k__	0.230481664066	5.91410839715e-05
+p__Bacteroidetes	k__	p__Firmicutes	k__	-0.958005681379	1.27377543762e-162
+p__Bacteroidetes	k__	p__Verrucomicrobia	k__	-0.33453687693	3.17596231395e-09
+p__Firmicutes	k__	p__Verrucomicrobia	k__	0.308818547249	5.26182584566e-08

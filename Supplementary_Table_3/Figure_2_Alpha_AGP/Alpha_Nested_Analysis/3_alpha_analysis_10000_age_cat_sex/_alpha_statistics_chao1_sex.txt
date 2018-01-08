@@ -1,0 +1,1 @@
+ALPHA STATISTIC COMPARISON FOR METRIC chao1 by sexMann Whitney U - Nonparametric Rank Test    Comparing: male with female    List #1 Length: 518 | List #2 Length: 473    Test Statistic: 120361.0    P-Value (onetailed): 0.31677900722    P-Value (twotailed): 0.63355801444

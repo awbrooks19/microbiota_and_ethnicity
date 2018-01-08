@@ -1,0 +1,1 @@
+ALPHA STATISTIC COMPARISON FOR METRIC shannon by sexMann Whitney U - Nonparametric Rank Test    Comparing: male with female    List #1 Length: 718 | List #2 Length: 657    Test Statistic: 224568.0    P-Value (onetailed): 0.0623072349515    P-Value (twotailed): 0.124614469903
